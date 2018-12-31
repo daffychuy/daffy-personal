@@ -13,9 +13,13 @@ The default page will be at port 8080
 * [Nextjs](https://nextjs.org) - A react framework that will be used to build on nodejs and express for server rendered application
 * [ejs](https://ejs.co/) - A template system for javascript that will generate html files
 
+## Thinking
+[YN] Use [Popperjs](https://popper.js.org/) - For placements in web 
 ## Static pages
 All static pages goes into /views/static/
-All static pages will use ejs template for html pages
+Where /view/static will contain the main website
+
+**All static pages will use ejs template for html pages**
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

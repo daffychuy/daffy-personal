@@ -1,0 +1,28 @@
+.brand {
+  padding-top: 50px;
+  height: 150px;
+  background-color: white;
+  font-size: 3rem;
+}
+.brand #brand-name {
+  color: #3a3a46;
+  text-align: center;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  background-color: white;
+}
+
+.navbar-nav li {
+  line-height: 10px;
+}
+.navbar-nav li a {
+  text-transform: uppercase;
+}
+.navbar-nav li:last-child {
+  border: none;
+}
+
+/*# sourceMappingURL=nav.css.map */
