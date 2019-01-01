@@ -1,3 +1,123 @@
+$color: #50c8c9;
+$color-2: #ffbe57;
+
+$text-color: #444;
+$text-secondary: #666;
+$grey: #999;
+$darker-grey: #666;
+$smoky-white: #f5f5f5;
+$divider: #efefef;
+$heart: #fb866a;
+
 body {
-  background-color: rgb(89, 92, 117);
+    font-family: 'Roboto', arial, sans-serif;
+    color: $text-color;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6  {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: $color;
+}
+
+a {
+    color: $color;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+        text-decoration: underline;
+        color: darken($color, 10%);
+    }
+}
+
+.btn, a.btn {
+    transition: all 0.4s ease-in-out;
+    font-family: 'Montserrat', arial, sans-serif;
+    padding: 8px 16px;
+    font-weight:bold;
+    .svg-inline--fa {
+        margin-right: 5px;
+    }
+
+    &:focus {
+        color: #fff;
+    }
+}
+
+a.btn-cta-primary, .btn-cta-primary {
+    background: darken($color, 30%);
+    border: 1px solid darken($color, 30%);
+    color: #fff;
+    font-weight:600;
+    text-transform: uppercase;
+    &:hover {
+        background: darken($color, 35%);
+        border: 1px solid darken($color, 35%);
+        color: #fff;
+    }
+}
+
+a.btn-cta-secondary,  .btn-cta-secondary {
+    background: $color-2;
+    border: 1px solid $color-2;
+    color: #fff;
+    font-weight:600;
+    text-transform: uppercase;
+    &:hover {
+        background: darken($color-2, 5%);
+        border: 1px solid darken($color-2, 5%);
+        color: #fff;
+    }
+}
+
+.text-highlight {
+    color: darken($color, 30%);
+}
+
+.offset-header {
+    padding-top: 90px;
+}
+
+pre code {
+    font-size: 16px;
+}
+
+.about {
+    padding: 80px 0;
+    background: $smoky-white;
+    .title {
+        color: darken($color, 30%);
+        margin-top: 0;
+        margin-bottom: 60px;
+    }
+    .intro {
+        max-width: 800px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+
+    .item {
+        position: relative;
+        margin-bottom: 30px;
+        .icon-holder {
+            position: absolute;
+            left: 30px;
+            top: 0;
+            .svg-inline--fa {
+                font-size: 24px;
+                color: darken($color, 30%);
+            }
+        }
+        .content {
+            padding-left: 60px;
+            .sub-title {
+                margin-top: 0;
+                color: darken($color, 30%);
+                font-size: 18px;
+            }
+        }
+    }
+
 }
