@@ -6,6 +6,7 @@ app.js
 
 ## Routing
 The default page will be at port 8080
+Why? Because this is the magic port where all things happen!
 
 ## Framework
 * [Express](https://expressjs.com) - Web application for nodejs
