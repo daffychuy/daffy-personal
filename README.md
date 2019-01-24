@@ -9,7 +9,7 @@ The default page will be at port 8080
 
 Why? Because this is the magic port where all things happen!
 
-## Framework
+## Framework -- Architecture
 * [Express](https://expressjs.com) - Web application for nodejs
 * [Nodejs](https://nodejs.org) - Main javascript application
 * [Nextjs](https://nextjs.org) - A react framework that will be used to build on nodejs and express for server rendered application
