@@ -25,5 +25,8 @@ Where /view/static will contain the main website
 
 **All static pages will use ejs template for html pages**
 
+## Timeline
+Currently unset due to University course loads.
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
