@@ -34,3 +34,20 @@ canvas#particle-js {
 a, button {
     pointer-events: all;
 }
+div.hero__slideContent.text-center{
+  bottom: 40%;
+}
+@media only screen and (max-width: 800px) {
+  header {
+    margin-top: 100px
+  }
+  div.hero {
+    margin-top: 100px
+  }
+  div.hero__slideContent.text-center {
+    bottom: 0;
+  }
+  section.about.section-margin.mb-5 {
+    margin-top: 150px
+  }
+}

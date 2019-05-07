@@ -88,7 +88,7 @@
         <div class="item">
           <div class="hero__slide">
             <img src="img/59440693_p0.jpg" alt="" style="width: 100% !important; filter: blur(8px); -webkit-filter: blur(8px); z-index: -100">
-            <div class="hero__slideContent text-center" style="bottom: 40%">
+            <div class="hero__slideContent text-center">
               <h1>Daniel - Daffy</h1>
               <p>A Computer Science student at University of Toronto.</p>
               <a class="btn btn--leftBorder btn--rightBorder" href="https://github.com/daffychuy">Github</a>
@@ -431,5 +431,9 @@
   });
   </script>
 </body>
-
+docker run -d \
+    --name daffy \
+    -e 'LETSENCRYPT_EMAIL=danielchu0710@hotmail.com' \
+    -e 'LETSENCRYPT_HOST=daffychuy.com' \
+    -e 'VIRTUAL_HOST=daffychuy.com' nginx
 </html>
