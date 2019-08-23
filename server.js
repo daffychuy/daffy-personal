@@ -1,13 +1,13 @@
-var express = require('express')
-var app = express()
-
+const express = require('express');
+const app = express();
+app.set('views', './views');
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
-	res.send('index');
+	res.render('index');
 });
 
-var server = app.listen(3000, function() {
+const server = app.listen(3000, function() {
     console.log(`Express is now running -> PORT ${server.address().port}`);
 });
 
