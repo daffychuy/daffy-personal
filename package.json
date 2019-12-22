@@ -1,32 +1,17 @@
 {
   "name": "daffy-personal",
-  "version": "0.0.1",
-  "description": "Daffy Chu's Personal website built using Nodejs",
-  "main": "index.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "start": "npx nodemon server.js --exec babel-node --presets env",
-    "release": "npm run clean && npm run build && npm run serve",
-    "clean": "rm -rf dist && mkdir dist",
-    "build": "babel . -s -D -d list --presesets env --ignore node_modules",
-    "serve": "node dist/server.js"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/daffychuy/daffy-personal.git"
-  },
-  "author": "Daffy Chu",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/daffychuy/daffy-personal/issues"
-  },
-  "homepage": "https://github.com/daffychuy/daffy-personal#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "pug": "^2.0.4"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "nodemon": "^1.19.1"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "node-sass-middleware": "0.11.0"
   }
 }
