@@ -29,6 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Custom Source
 app.use(express.static(__dirname + '/node_modules/bootstrap/dist'));
 app.use(express.static(__dirname + '/node_modules/jquery/dist'));
+app.use(express.static(__dirname + '/node_modules/particles.js/'));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
