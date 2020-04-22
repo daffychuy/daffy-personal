@@ -4,7 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 
-var api = require('./routes/api');
+var api = require('./routes/index');
 var app = express();
 
 app.use(logger('dev'));

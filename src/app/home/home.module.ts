@@ -3,11 +3,13 @@ import { SharedModule } from '../shared/shared.module';
 import { HomeComponent } from './home.component';
 import { ModuleWithProviders, NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { DataResolverService } from './home-resolver.service';
 
 const homeRouting: ModuleWithProviders = RouterModule.forChild([
   {
     path: '',
-    component: HomeComponent
+    component: HomeComponent,
+    resolve: { data: DataResolverService }
   }
 ])
 @NgModule({
@@ -18,6 +20,8 @@ const homeRouting: ModuleWithProviders = RouterModule.forChild([
     SharedModule,
     HomeRoutingModule
   ],
-  providers: []
+  providers: [
+    DataResolverService
+  ]
 })
 export class HomeModule { }

@@ -4,14 +4,12 @@
   <div class="content-center">
     <div class="container">
       <div class="motto text-left">
-        <h1 class="title">Software Dev, Technology Enthusiast and University Student</h1>
-        <h3 class="description">A third year University student Specializing in Computer Science and are very
-          interested in working on software development</h3>
+        <h1 class="title">{{data.basic[0].page_title}}</h1>
+        <h3 class="description">{{data.basic[0].page_description}}</h3>
       </div>
     </div>
   </div>
 </div>
-
 <!-- Main content-->
 <div class="wrapper">
   <div class="section text-center landing-section">
@@ -20,14 +18,7 @@
         <div class="col-md-8 ml-auto mr-auto">
           <h2 class="title">A little about me</h2>
           <h5 class="description">
-            My name is Daniel, with the nickname of Daffy, and currently studying at University of Toronto in the
-            field of Computer Science.
-            I am currently really interested in creating new programs, collaborate with others and discover more
-            awesome technologies.
-            In addition, I am also pursuing in the software developer world in the future after graduation.
-            My hobby consists of speaking/learning japanese, playing guitar, writing "fun" code, learning new
-            algorithms and programming languages
-            as well as watching anime!
+            {{data.basic[0].about_me}}
           </h5>
         </div>
       </div>
@@ -47,9 +38,9 @@
                 <div class="card-body">
                   <div class="author">
                     <h4 class="card-title">Teaching Assistant</h4>
-                    <h6 class="card-category text-muted">Jan 2020 - Present</h6>
-                    <h6 class="card-cateogry text-muted">Marking TA / Board TA</h6>
-                    <h6 class="card-cateogry text-muted">Introduction to Computer Science</h6>
+                    <h6 class="card-category text-muted" style="font-weight: 600 !important">Jan 2020 - April 2020</h6>
+                    <h6 class="card-cateogry text-muted" style="font-weight: 600 !important">Marking TA / Board TA</h6>
+                    <h6 class="card-cateogry text-muted" style="font-weight: 600 !important">Introduction to Computer Science</h6>
                   </div>
                   <p class="card-description text-center">
                     Working in the "backend" of TA where I will be marking all the assignments and tests that student
@@ -66,9 +57,9 @@
                 <div class="card-body">
                   <div class="author">
                     <h4 class="card-title">Teaching Assistant</h4>
-                    <h6 class="card-category text-muted">Sep 2019 - Dec 2019</h6>
-                    <h6 class="card-category text-muted">Lecture TA</h6>
-                    <h6 class="card-cateogry text-muted">Introduction to Computer Science</h6>
+                    <h6 class="card-category text-muted" style="font-weight: 600 !important">Sep 2019 - Dec 2019</h6>
+                    <h6 class="card-category text-muted" style="font-weight: 600 !important">Lecture TA</h6>
+                    <h6 class="card-cateogry text-muted" style="font-weight: 600 !important">Introduction to Computer Science</h6>
                   </div>
                   <p class="card-description text-center">
                     A new way of learning, acting learning where as a teaching assistant, I would assist the professor
@@ -86,9 +77,9 @@
                 <div class="card-body">
                   <div class="author">
                     <h4 class="card-title">Teaching Assistant</h4>
-                    <h6 class="card-category text-muted">Jan 2019 - Apr 2019</h6>
-                    <h6 class="card-cateogry text-muted"> Lab TA </h6>
-                    <h6 class="card-cateogry text-muted">Introduction to Computer Science</h6>
+                    <h6 class="card-category text-muted" style="font-weight: 600 !important">Jan 2019 - Apr 2019</h6>
+                    <h6 class="card-cateogry text-muted" style="font-weight: 600 !important"> Lab TA </h6>
+                    <h6 class="card-cateogry text-muted" style="font-weight: 600 !important">Introduction to Computer Science</h6>
                   </div>
                   <p class="card-description text-center">
                     First-time Teaching Assistant experience, hosted a two hours tutorial sessions where I teach a
@@ -119,7 +110,7 @@
                 <h4 class="card-title">
                   Arezue (Anonymous Job Search)
                 </h4>
-                <h6>Dec 2019 - Present</h6>
+                <h6 style="font-weight: 600 !important">Dec 2019 - Present</h6>
                 <h6 class="description">(Will be a semester long)</h6>
                 <div class="card-description">
                   A huge project that allows an anonymous way of job seeking to eliminate race, age, and others during
@@ -142,7 +133,7 @@
                 <h4 class="card-title">
                   Web Scrapper
                 </h4>
-                <h6>2018 Summer</h6>
+                <h6 style="font-weight: 600 !important">2018 Summer</h6>
                 <div class="card-description">
                   A custom python script that not only grabs data from various websites, but also put all data
                   scrapped with the use of <a href="https://scrapy.org/" target="_blank">Scrapy</a> into <a
@@ -170,7 +161,7 @@
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto">
             <h2 class="title">Technologies</h2>
-            <h6 class="description">The Languages, Technologies that I've used</h6>
+            <h6 class="description">The Languages/Technologies that I've learned & used</h6>
           </div>
         </div>
         <div class="row">
@@ -254,6 +245,16 @@
               </div>
             </div>
           </div>
+          <div class="col-md-2">
+            <div class="info tech">
+              <div class="icon">
+                <img src="https://img.icons8.com/color/48/000000/angularjs.png"/>
+              </div>
+              <div class="description">
+                Angular
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -264,7 +265,7 @@
             <h2 class="text-left">
               Contact Me?
             </h2>
-            <h6 class="text-left">Hire Me?</h6>
+            <h6 class="text-left" style="font-weight: 700 !important">Hire Me?</h6>
           </div>
           <div class="col-md-4 ml-auto mr-auto">
             <h2 class="text-right">
