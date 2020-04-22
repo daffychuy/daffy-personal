@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { HomeComponent } from './home.component';
@@ -18,7 +19,8 @@ const homeRouting: ModuleWithProviders = RouterModule.forChild([
   ],
   imports: [
     SharedModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    CommonModule
   ],
   providers: [
     DataResolverService

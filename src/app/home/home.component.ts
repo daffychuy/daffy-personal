@@ -9,7 +9,7 @@ import { home } from '../core/services/home.interface'
   styleUrls: ['./home.component.sass']
 })
 export class HomeComponent implements OnInit {
-  data: any
+  data: any;
   constructor(
     private route: ActivatedRoute,
     private hs: HomeService
@@ -17,7 +17,15 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.data = this.route.snapshot.data.data;
-
+    console.log(this.data.experiences);
+    for (let i = 0; i < this.data.experiences.length; i++) {
+      let date = new Date(this.data.experiences[i].start_date);
+      let new_date = date.getFullYear() + '-' + (date.getMonth()+1) + '-' + date.getDate();
+      this.data.experiences[i].start_date = new_date;
+      date = new Date(this.data.experiences[i].end_date);
+      new_date = date.getFullYear() + '-' + (date.getMonth()+1) + '-' + date.getDate();
+      this.data.experiences[i].end_date = new_date;
+    }
   }
 
 }

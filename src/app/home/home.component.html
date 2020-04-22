@@ -32,64 +32,24 @@
       <h6 class="description">The work throughout the course of University</h6>
         <br />
         <div class="row">
-          <div class="col-md-4">
+          <div *ngFor="let d of data.experiences" class="col-md-4">
             <div class="card car-profile card-plain">
               <div class="card-body">
                 <div class="card-body">
                   <div class="author">
-                    <h4 class="card-title">Teaching Assistant</h4>
-                    <h6 class="card-category text-muted" style="font-weight: 600 !important">Jan 2020 - April 2020</h6>
-                    <h6 class="card-cateogry text-muted" style="font-weight: 600 !important">Marking TA / Board TA</h6>
-                    <h6 class="card-cateogry text-muted" style="font-weight: 600 !important">Introduction to Computer Science</h6>
+                    <h4 class="card-title">{{d.title}}</h4>
+                    <h6 class="card-category text-muted" style="font-weight: 600 !important">{{d.start_date}} ~ {{d.end_date}}</h6>
+                    <h6 class="card-cateogry text-muted" style="font-weight: 600 !important" [innerHTML]="d.detailed_position"></h6>
                   </div>
                   <p class="card-description text-center">
-                    Working in the "backend" of TA where I will be marking all the assignments and tests that student
-                    writes as well as answer questions on discussion board.
+                    {{d.description}}
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-md-4">
-            <div class="card car-profile card-plain">
-              <div class="card-body">
-                <div class="card-body">
-                  <div class="author">
-                    <h4 class="card-title">Teaching Assistant</h4>
-                    <h6 class="card-category text-muted" style="font-weight: 600 !important">Sep 2019 - Dec 2019</h6>
-                    <h6 class="card-category text-muted" style="font-weight: 600 !important">Lecture TA</h6>
-                    <h6 class="card-cateogry text-muted" style="font-weight: 600 !important">Introduction to Computer Science</h6>
-                  </div>
-                  <p class="card-description text-center">
-                    A new way of learning, acting learning where as a teaching assistant, I would assist the professor
-                    during lecture to answer questions students may have and to co-teach with the professor during
-                    times that students write codes in.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card car-profile card-plain">
-              <div class="card-body">
-                <div class="card-body">
-                  <div class="author">
-                    <h4 class="card-title">Teaching Assistant</h4>
-                    <h6 class="card-category text-muted" style="font-weight: 600 !important">Jan 2019 - Apr 2019</h6>
-                    <h6 class="card-cateogry text-muted" style="font-weight: 600 !important"> Lab TA </h6>
-                    <h6 class="card-cateogry text-muted" style="font-weight: 600 !important">Introduction to Computer Science</h6>
-                  </div>
-                  <p class="card-description text-center">
-                    First-time Teaching Assistant experience, hosted a two hours tutorial sessions where I teach a
-                    full university-sized class students about the fundamental of Python and the required knowledge
-                    that they need for assignments, labs and tests.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
     </div>
   </div>
@@ -103,49 +63,17 @@
           The projects that I've worked on or is currently in the work while studying
         </h6>
         <div class="row">
-          <div class="col-md-6">
+          <div *ngFor="let d of data.projects" class="col-md-6">
             <div class="card card-blog">
               <div class="card-body">
                 <!-- <label class="badge badge-pill badge-danger">Beginner</label> -->
                 <h4 class="card-title">
-                  Arezue (Anonymous Job Search)
+                  {{d.title}}
                 </h4>
-                <h6 style="font-weight: 600 !important">Dec 2019 - Present</h6>
-                <h6 class="description">(Will be a semester long)</h6>
-                <div class="card-description">
-                  A huge project that allows an anonymous way of job seeking to eliminate race, age, and others during
-                  a job search. Where this project will hide personal information on resumes so that recruiters
-                  will decide on a callback based solely on the jobseeker's qualification. In addition, Personal
-                  information will only be revealed if the jobseeker accepts an interview request.
-                  <br><br>
-                  Technology Used:
-                  <br>
-                  Flutter, NodeJS with ExpressJs, PostgreSQL, ELasticSearch, Firebase
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-6">
-            <div class="card card-blog">
-              <div class="card-body">
-                <!-- <label class="badge badge-pill badge-danger">Beginner</label> -->
-                <h4 class="card-title">
-                  Web Scrapper
-                </h4>
-                <h6 style="font-weight: 600 !important">2018 Summer</h6>
-                <div class="card-description">
-                  A custom python script that not only grabs data from various websites, but also put all data
-                  scrapped with the use of <a href="https://scrapy.org/" target="_blank">Scrapy</a> into <a
-                    href="https://www.mongodb.com/" target="_blank">MongoDB</a>.
-                  The main idea was to scrap both anime and manga data in both Japenses and English and to combine the
-                  two data in two languages into one databse and one website. However, had trouble merging the
-                  Japenese content and English content correctly without
-                  putting data in the wrong data sets.
-                  <br><br>
-                  Technology Used:
-                  <br>
-                  Python, Scrapy, MongoDB
+                <h6 style="font-weight: 600 !important">{{d.date}}</h6>
+                <!-- <h6 class="description">(Will be a semester long)</h6> -->
+                <div class="card-description" [innerHTML]="d.description">
+                  
                 </div>
               </div>
             </div>
