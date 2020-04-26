@@ -2,11 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { home } from './home.interface';
-import { delay } from "rxjs/operators";
-import { InjectionToken, FactoryProvider } from '@angular/core';
-
-
-import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
