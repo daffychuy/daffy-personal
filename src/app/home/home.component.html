@@ -1,5 +1,5 @@
 <!-- Main hero page -->
-<div class="page-header" data-parallax="true">
+<div class="page-header cd-section" data-parallax="true" id="page-head">
   <div class="filter"></div>
   <div class="content-center">
     <div class="container">
@@ -12,7 +12,7 @@
 </div>
 <!-- Main content-->
 <div class="wrapper">
-  <div class="section text-center landing-section">
+  <div class="section text-center landing-section cd-section" id="about-me">
     <div class="container">
       <div class="row">
         <div class="col-md-8 ml-auto mr-auto">
@@ -26,7 +26,7 @@
     </div>
   </div>
 
-  <div class="section section-dark text-center landing-section">
+  <div class="section section-dark text-center landing-section cd-section" id="experiences">
     <div class="container">
       <h2 class="title">Work Experiences</h2>
       <h6 class="description">The work throughout the course of University</h6>
@@ -53,38 +53,77 @@
         </div>
     </div>
   </div>
-  <div class="section landing-section text-center">
-    <div class="container">
-      <div id="description-areas">
-        <h2 class="title">
-          Projects
-        </h2>
-        <h6 class="descrption">
-          The projects that I've worked on or is currently in the work while studying
-        </h6>
-        <div class="row">
-          <div *ngFor="let d of data.projects" class="col-md-6">
-            <div class="card card-blog">
-              <div class="card-body">
-                <!-- <label class="badge badge-pill badge-danger">Beginner</label> -->
-                <h4 class="card-title">
-                  {{d.title}}
-                </h4>
-                <h6 style="font-weight: 600 !important">{{d.date}}</h6>
-                <!-- <h6 class="description">(Will be a semester long)</h6> -->
-                <div class="card-description" [innerHTML]="d.description">
-                  
+    <div class="section section-project cd-section" id="projects">
+        <div class="project-4 section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 ml-auto mr-auto text-center">
+                <h2 class="title">Projects</h2>
+                <h5 class="description">THE PROJECTS THAT I'VE WORKED ON OR IS CURRENTLY IN THE WORK WHILE STUDYING</h5>
+              </div>
+            </div>
+            <div class="space-top"></div>
+            <div *ngFor="let d of data.projects">
+            <div *ngIf="d.id % 2 === 0" class="row" style="font-weight: 400 !important">
+              <div class="col-md-5 ml-auto">
+                <div class="card" data-background="image" style="background-image: url('/assets/images/blank-image.png')">
+                </div>
+              </div>
+              <div class="col-md-5 mr-auto">
+                <div class="card card-plain">
+                  <div class="card-body text-left">
+                    <h6 class="card-category">Side Project</h6>
+                    <a href="#pablo">
+                      <h3 class="card-title">{{d.title}}</h3>
+                    </a>
+                    <p class="card-description" [innerHTML]="d.description"></p>
+                    <div class="card-footer">
+                      <a href="#" class="btn btn-neutral">
+                        <i class="fa fa-book" aria-hidden="true"></i> Read More
+                      </a>
+                      <a href="#" class="btn btn-just-icon btn-neutral">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-
+            <span *ngIf="d.id % 2 === 1">
+              <br><hr><br>
+            </span>
+            <div *ngIf="d.id % 2 === 1" class="row" style="font-weight: 400 !important">
+              <div class="col-md-5 ml-auto">
+                <div class="card card-plain">
+                  <div class="card-body">
+                    <h6 class="card-category">Side Project</h6>
+                    <a href="#pablo">
+                      <h3 class="card-title">{{d.title}}</h3>
+                    </a>
+                    <p class="card-description" [innerHTML]="d.description"></p>
+                    <div class="card-footer">
+                      <a href="#" class="btn btn-neutral">
+                        <i class="fa fa-book" aria-hidden="true"></i> Read More
+                      </a>
+                      <a href="#" class="btn btn-just-icon btn-neutral">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 mr-auto">
+                <div class="card" data-background="image" style="background-image: url('/assets/images/blank-image.png')">
+                </div>
+              </div>
+              
+            </div>
           </div>
-
-        </div>
       </div>
-    </div>
+      <!-- </div> -->
 
-    <div class="section section-dark landing-section text-center">
+    </div>
+    <div class="section section-dark landing-section text-center cd-section" id="tech">
       <div class="container">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto">
@@ -96,7 +135,7 @@
           <div class="col-md-2">
             <div class="info tech">
               <div class="icon">
-                <img src="https://img.icons8.com/color/48/000000/python.png">
+                <img src="/assets/images/python.png">
               </div>
               <div class="description">
                 Python
@@ -106,7 +145,7 @@
           <div class="col-md-2">
             <div class="info tech">
               <div class="icon">
-                <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png">
+                <img src="/assets/images/java.png">
               </div>
               <div class="description">
                 Java
@@ -116,7 +155,7 @@
           <div class="col-md-2">
             <div class="info tech">
               <div class="icon">
-                <img src="https://img.icons8.com/color/48/000000/c-programming.png">
+                <img src="/assets/images/c.png">
               </div>
               <div class="description">
                 C
@@ -126,7 +165,7 @@
           <div class="col-md-2">
             <div class="info tech">
               <div class="icon">
-                <img src="https://img.icons8.com/color/48/000000/docker.png">
+                <img src="/assets/images/docker.png">
               </div>
               <div class="description">
                 Docker
@@ -136,7 +175,7 @@
           <div class="col-md-2">
             <div class="info tech">
               <div class="icon">
-                <img src="https://img.icons8.com/color/48/000000/javascript.png">
+                <img src="/assets/images/javascript.png">
               </div>
               <div class="description">
                 Javascript
@@ -146,7 +185,7 @@
           <div class="col-md-2">
             <div class="info tech">
               <div class="icon">
-                <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png">
+                <img src="/assets/images/c++.png">
               </div>
               <div class="description">
                 C++
@@ -156,7 +195,7 @@
           <div class="col-md-2">
             <div class="info tech">
               <div class="icon">
-                <img src="https://img.icons8.com/color/48/000000/nodejs.png">
+                <img src="/assets/images/nodejs.png">
               </div>
               <div class="description">
                 Nodejs
@@ -166,7 +205,7 @@
           <div class="col-md-2">
             <div class="info tech">
               <div class="icon">
-                <img src="https://img.icons8.com/color/48/000000/flutter.png">
+                <img src="/assets/images/flutter.png">
               </div>
               <div class="description">
                 Flutter
@@ -176,7 +215,7 @@
           <div class="col-md-2">
             <div class="info tech">
               <div class="icon">
-                <img src="https://img.icons8.com/color/48/000000/angularjs.png"/>
+                <img src="/assets/images/angular.png"/>
               </div>
               <div class="description">
                 Angular
@@ -186,7 +225,7 @@
         </div>
       </div>
     </div>
-    <div class="section section-gray">
+    <div class="section section-gray cd-section" id="contact-me">
       <div class="container">
         <div class="row">
           <div class="col-md-4 ml-auto mr-auto">
@@ -206,3 +245,43 @@
     </div>
   </div>
 </div>
+<nav id="cd-vertical-nav">
+  <ul>
+    <li>
+      <a href="#page-head" data-number="1">
+        <span class="cd-dot"></span>
+        <span class="cd-label">Headers</span>
+      </a>
+    </li>
+    <li>
+      <a href="#about-me" data-number="2">
+        <span class="cd-dot"></span>
+        <span class="cd-label">Features</span>
+      </a>
+    </li>
+    <li>
+      <a href="#experiences" data-number="3" class="">
+        <span class="cd-dot"></span>
+        <span class="cd-label">Blogs</span>
+      </a>
+    </li>
+    <li>
+      <a href="#projects" data-number="5" class="">
+        <span class="cd-dot"></span>
+        <span class="cd-label">Projects</span>
+      </a>
+    </li>
+    <li>
+      <a href="#tech" data-number="8">
+        <span class="cd-dot"></span>
+        <span class="cd-label">Technologies Learnt</span>
+      </a>
+    </li>
+    <li>
+      <a href="#contact-me" data-number="8">
+        <span class="cd-dot"></span>
+        <span class="cd-label">Contact Me</span>
+      </a>
+    </li>
+  </ul>
+</nav>

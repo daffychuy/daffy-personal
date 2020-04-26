@@ -257,7 +257,6 @@
   background-color: #cfcfca
 }
 
-/*! nouislider - 13.1.1 - 2/14/2019 */
 .noUi-target,
 .noUi-target * {
   -webkit-touch-callout: none;
@@ -606,12 +605,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   box-shadow: 0 0 10px 0 #f5593d
 }
 
-/*!
- * Bootstrap-select v1.13.2 (https://developer.snapappointments.com/bootstrap-select)
- *
- * Copyright 2012-2018 SnapAppointments, LLC
- * Licensed under MIT (https://github.com/snapappointments/bootstrap-select/blob/master/LICENSE)
- */
 .bootstrap-select>select.bs-select-hidden,
 select.bs-select-hidden,
 select.selectpicker {
@@ -1214,11 +1207,6 @@ select.selectpicker {
   border: 0 none
 }
 
-/*!
- * Datetimepicker for Bootstrap 3
- * ! version : 4.7.14
- * https://github.com/Eonasdan/bootstrap-datetimepicker/
- */
 .bootstrap-datetimepicker-widget .btn[data-action=clear]:after,
 .bootstrap-datetimepicker-widget .btn[data-action=decrementHours]:after,
 .bootstrap-datetimepicker-widget .btn[data-action=decrementMinutes]:after,
@@ -2250,8 +2238,8 @@ td,
 textarea {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: Montserrat, Helvetica, Arial, sans-serif !important;
-  font-weight: 300 !important
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-weight: 300
 }
 
 .h1,
@@ -5601,7 +5589,7 @@ textarea.form-control {
   -webkit-transition: all .4s;
   padding: 0;
   background: #fff;
-  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, .15);
+  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, .15)
 }
 
 .navbar .navbar-brand {
@@ -8429,7 +8417,7 @@ video {
 }
 
 .card-big-shadow:before {
-  background-image: url(http://static.tumblr.com/i21wc39/coTmrkw40/shadow.png);
+  background-image: url('/assets/images/blank-image.png');
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -9000,9 +8988,6 @@ video {
   height: 60px
 }
 
-/*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */
-
-/*! PhotoSwipe Default UI CSS by Dmitry Semenov | photoswipe.com | MIT license */
 .pswp__button {
   width: 44px;
   height: 44px;
@@ -9321,6 +9306,8 @@ a.pswp__share--download:hover {
   opacity: 1
 }
 
+.pswp__preloader--active .pswp__preloader__icn {
+}
 
 .pswp--css_animation .pswp__preloader--active {
   opacity: 1
@@ -9470,7 +9457,6 @@ a.pswp__share--download:hover {
   text-align: center
 }
 
-/*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */
 .pswp {
   display: none;
   position: absolute;
@@ -10960,6 +10946,8 @@ a.pswp__share--download:hover {
   margin-top: 15px
 }
 
+.blog-post .blog-header-image {
+}
 
 .blog-post .navbar input {
   background-color: hsla(0, 0%, 100%, .17)
@@ -13071,7 +13059,6 @@ body {
     max-width: 170px !important
   }
 }
-
 
 .nc-icon {
   display: inline-block;

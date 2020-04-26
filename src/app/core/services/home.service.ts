@@ -3,6 +3,8 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { home } from './home.interface';
 import { delay } from "rxjs/operators";
+import { InjectionToken, FactoryProvider } from '@angular/core';
+
 
 import { map } from 'rxjs/operators';
 
@@ -16,7 +18,8 @@ export class HomeService {
   ) { }
 
   getAll(): Observable<home[]> {
-    return this.http.get<home[]>('http://localhost:3000/api/personal/v1/personal').pipe(delay(1000));
+
+    return this.http.get<home[]>('/api/personal/v1/personal').pipe(delay(1000));
   }
 
 }
