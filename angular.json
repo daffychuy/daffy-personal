@@ -33,7 +33,7 @@
               "src/assets/css/main_custom.sass"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/jquery/dist/jquery.slim.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "node_modules/@fortawesome/fontawesome-free/js/all.min.js",
               "src/assets/js/main_theme.js"
