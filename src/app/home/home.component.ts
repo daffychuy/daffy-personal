@@ -17,7 +17,6 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.data = this.route.snapshot.data.data;
-    console.log(this.data.experiences);
     for (let i = 0; i < this.data.experiences.length; i++) {
       let date = new Date(this.data.experiences[i].start_date);
       let new_date = date.getFullYear() + '-' + (date.getMonth()+1) + '-' + date.getDate();
