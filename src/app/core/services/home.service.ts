@@ -19,7 +19,7 @@ export class HomeService {
 
   getAll(): Observable<home[]> {
 
-    return this.http.get<home[]>('/api/personal/v1/personal').pipe(delay(1000));
+    return this.http.get<home[]>('/api/personal/v1/personal');
   }
 
 }
