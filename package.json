@@ -4,7 +4,8 @@
   "license": "GPL-3.0-or-later",
   "scripts": {
     "ng": "ng",
-    "start": "ng build --prod --aot && node ./bin/www",
+    "start": "npm install && node ./bin/www",
+    "build-prod": "ng build --prod --aot",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
