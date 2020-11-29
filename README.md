@@ -1,3 +1,4 @@
+![Node.js CI](https://github.com/daffychuy/daffy-personal/workflows/Node.js%20CI/badge.svg)
 # PersonalSite
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
