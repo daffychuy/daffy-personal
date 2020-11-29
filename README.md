@@ -1,4 +1,4 @@
-![Node.js CI](https://github.com/daffychuy/daffy-personal/workflows/Node.js%20CI/badge.svg)
+![Node.js CI](https://github.com/daffychuy/daffy-personal/workflows/Node.js%20CI/badge.svg) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fdaffychuy%2Fdaffy-personal.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fdaffychuy%2Fdaffy-personal?ref=badge_shield)
 # PersonalSite
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
